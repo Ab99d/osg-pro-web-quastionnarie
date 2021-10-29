@@ -1,12 +1,12 @@
 import React from 'react'
 // import logo from '../assets/images/OSGpro-logo-rgb.svg'
 
-const WebQuestionnaire = () => {
+const WebQuestionnaireAR = () => {
     return (
-        <form action="">
+        <form action="" className="web-questionnaire-ar">
         <div className="container">
             <div className="form-title">
-                <h2>Web On-boarding Questionnaire</h2>
+                <h2>استبيان على الويب</h2>
                 <p>Kindly provide required information about your work in order to conceive the specifications of your business</p>
             </div>
 
@@ -169,4 +169,4 @@ const WebQuestionnaire = () => {
     )
 }
 
-export default WebQuestionnaire
+export default WebQuestionnaireAR

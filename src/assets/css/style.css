@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto+Condensed:wght@700&display=swap');
 *,
 *::after,
 *::before {
@@ -7,7 +8,17 @@
   box-sizing: border-box;
 }
 
-.container {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+form {
+  background: url("../images/bg.png");
+  background-size: cover;
+}
+form .container {
   width: min(600px, 80%);
   margin: auto;
   display: flex;
@@ -15,11 +26,11 @@
   justify-content: center;
   align-items: center;
 }
-.container img {
+form .container img {
   width: 150px;
   margin-top: 2rem;
 }
-.container .form-title {
+form .container .form-title {
   padding: 2.5rem;
   margin: 2rem 0;
   background-color: white;
@@ -27,18 +38,18 @@
   border: 1px solid #dadce0;
   box-shadow: 0px 0px 8px 1px #dadce0;
 }
-.container .form-title h2 {
+form .container .form-title h2 {
   font-family: Cabin;
   margin-bottom: 0.8rem;
   color: #fcb813;
 }
-.container .form-title p {
+form .container .form-title p {
   font-family: Roboto, Arial, sans-serif;
   font-size: 15px;
   color: #8a817c;
   line-height: 25px;
 }
-.container div:not(:first-of-type) {
+form .container div:not(:first-of-type) {
   padding: 1rem;
   background-color: white;
   border: 1px solid #dadce0;
@@ -48,12 +59,12 @@
   padding: 1rem 2rem;
   margin-bottom: 1rem;
 }
-.container div:not(:first-of-type) label {
+form .container div:not(:first-of-type) label {
   font-size: 14px;
   font-family: Roboto, Arial, sans-serif;
   color: #8a817c;
 }
-.container div:not(:first-of-type) input {
+form .container div:not(:first-of-type) input {
   margin-top: 0.5rem;
   width: 60%;
   border: 0;
@@ -65,43 +76,46 @@
   background: transparent;
   transition: border-color 0.2s;
 }
-.container div:not(:first-of-type) input:focus {
+form .container div:not(:first-of-type) input:focus {
   border-bottom: 2px solid #007ee1;
 }
 @media (max-width: 800px) {
-  .container div:not(:first-of-type) input input {
+  form .container div:not(:first-of-type) input input {
     width: 100% !important;
   }
 }
-.container .your-business input, .container .your-offer input {
+form .container .your-business input, form .container .your-offer input {
   width: 100% !important;
 }
-.container .your-opinion input {
+form .container .your-opinion input, form .container .additional-information input {
   width: 100% !important;
 }
-.container .choose-radio input, .container .choose-check-box input {
+form .container .choose-radio input, form .container .choose-check-box input {
   width: auto !important;
 }
-.container .choose-check-box label:last-of-type {
+form .container .choose-check-box label:last-of-type {
   margin-right: 1rem;
 }
-.container .thank-you h4 {
+form .container .choose-check-box input:last-of-type {
+  width: 80% !important;
+}
+form .container .thank-you h4 {
   font-family: Cabin;
   color: #8a817c;
   text-align: center;
   line-height: 25px;
 }
-.container main {
+form .container main {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 1rem 0 5rem 0;
 }
-.container main a {
+form .container main a {
   color: white;
   text-decoration: none;
 }
-.container main a input {
+form .container main a input {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -112,6 +126,12 @@
   border-radius: 30px;
   font-weight: 700;
 }
-.container main a input:hover {
+form .container main a input:hover {
   background-color: #fcb813;
 }/*# sourceMappingURL=style.css.map */
+
+/* start style arabic page */
+
+.web-questionnaire-ar * {
+  font-family: Almarai;
+}
