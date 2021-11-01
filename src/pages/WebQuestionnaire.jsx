@@ -3,7 +3,7 @@ import React from 'react'
 
 const WebQuestionnaire = () => {
     return (
-        <form action="">
+        <form action="" className='web-en-form web'>
         <div className="container">
             <div className="form-title">
                 <h2>Web On-boarding Questionnaire</h2>
