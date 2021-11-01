@@ -18,6 +18,7 @@ form {
   background: url("../images/bg.png");
   background-size: cover;
 }
+
 form .container {
   width: min(600px, 80%);
   margin: auto;
@@ -31,6 +32,7 @@ form .container img {
   margin-top: 2rem;
 }
 form .container .form-title {
+  width: 100%;
   padding: 2.5rem;
   margin: 2rem 0;
   background-color: white;
@@ -132,6 +134,26 @@ form .container main a input:hover {
 
 /* start style arabic page */
 
+form.web-questionnaire-ar .container .form-title p {
+  font-family: Almarai !important;
+}
+
+.web-questionnaire-ar .container .form-title h2 {
+  font-family: Almarai !important;
+}
+
+.web-questionnaire-ar .container .thank-you h4 {
+  font-family: Almarai !important;
+}
+
+.web-questionnaire-ar .container div:not(:first-of-type) label {
+  font-family: Almarai !important;
+}
+
 .web-questionnaire-ar * {
-  font-family: Almarai;
+  direction: rtl;
+}
+
+.web-questionnaire-ar input[type=submit] {
+  font-family: Almarai !important;
 }

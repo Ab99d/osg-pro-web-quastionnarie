@@ -7,83 +7,83 @@ const WebQuestionnaireAR = () => {
         <div className="container">
             <div className="form-title">
                 <h2>استبيان على الويب</h2>
-                <p>Kindly provide required information about your work in order to conceive the specifications of your business</p>
+                <p className="">يرجى تقديم المعلومات المطلوبة حول عملك من أجل تصور مواصفات عملك</p>
             </div>
 
             <div className="full-name">
-                <label htmlFor="fname" className="form-label">Full Name</label><br/>
+                <label htmlFor="fname" className="form-label">اللأسم الكامل</label><br/>
                 <input type="text" id="fname" name="fname" required/>
             </div>
 
             <div className="phone-number">
-                <label htmlFor="fname" className="form-label">Phone Number</label><br/>
+                <label htmlFor="fname" className="form-label">رقم الهاتف</label><br/>
                 <input type="number" id="fname" name="fname" required/>
             </div>
 
             <div className="email">
-                <label htmlFor="fname" className="form-label">Email</label><br/>
+                <label htmlFor="fname" className="form-label">الايميل</label><br/>
                 <input type="email" id="fname" name="fname" required/>
             </div>
 
             <div className="company-name">
-                <label htmlFor="fname" className="form-label">Business/Company Name</label><br/>
+                <label htmlFor="fname" className="form-label">اسم العمل / الشركة</label><br/>
                 <input type="text" id="fname" name="fname" required/>
             </div>
 
             <div className="your-business">
-                <label htmlFor="fname" className="form-label">Please tell us about your business (Who are you? What do you do?)</label><br/>
+                <label htmlFor="fname" className="form-label">من فضلك أخبرنا عن عملك (من أنت؟ ماذا تفعل؟)</label><br/>
                 <input type="text" id="fname" name="fname" required/>
             </div>
 
             <div className="your-offer">
-                <label htmlFor="fname" className="form-label">What do you offer (Product/Service)?</label><br/>
+                <label htmlFor="fname" className="form-label">ماذا تقدمون (المنتج / الخدمة)؟</label><br/>
                 <input type="text" id="fname" name="fname" required/>
             </div>
 
             <div className="provide-the-current-Website">
-                <label htmlFor="fname" className="form-label">Please provide the current Website URL (if available)</label><br/>
+                <label htmlFor="fname" className="form-label">يرجى تقديم عنوان URL لموقع الويب الحالي (إن وجد)</label><br/>
                 <input type="text" id="fname" name="fname"/>
             </div>
 
             <div className="your-opinion">
-                <label htmlFor="fname" className="form-label">If there is a website, what is wrong with the current website in your opinion?</label><br/>
+                <label htmlFor="fname" className="form-label">إذا كان هناك موقع على شبكة الإنترنت ، فما الخطأ في الموقع الحالي برأيك؟</label><br/>
                 <input type="text" id="fname" name="fname"/>
             </div>
 
             <div className="your-domains">
-                <label htmlFor="fname" className="form-label">If your answer was yes, please tell us the domain's name (we will need an access later on)</label><br/>
+                <label htmlFor="fname" className="form-label">إذا كانت إجابتك بنعم ، فيرجى إخبارنا باسم المجال (سنحتاج إلى وصول لاحقًا)</label><br/>
                 <input type="text" id="fname" name="fname"/>
             </div>
 
             <div className="choose-radio">
-                <label htmlFor="fname" className="form-label">Is the content of your website available (Textual content: info, articles, copyrights, Graphic Content: logo, colors, images, videos, etc..)?</label><br/>
+                <label htmlFor="fname" className="form-label">هل محتوى موقع الويب الخاص بك متاح (محتوى نصي: معلومات ، مقالات ، حقوق نشر ، محتوى رسومي: شعار ، ألوان ، صور ، مقاطع فيديو ، إلخ ..)؟</label><br/>
                 <br/>
                 <input type="radio" name="choose-websita-available" required/>
-                <label htmlFor="html">Yes</label><br/>
+                <label htmlFor="html">نعم</label><br/>
                 <input type="radio" name="choose-websita-available"/>
-                <label htmlFor="html">No</label><br/>
+                <label htmlFor="html">لا</label><br/>
             </div>
 
             <div className="choose-radio">
-                <label htmlFor="fname" className="form-label">If your answer was no, do you have a content creator?</label><br/>
+                <label htmlFor="fname" className="form-label">إذا كانت إجابتك لا ، فهل لديك منشئ محتوى؟</label><br/>
                 <br/>
                 <input type="radio" name="choose-contact-creator"/>
-                <label>Yes</label><br/>
+                <label>نعم</label><br/>
                 <input type="radio" name="choose-contact-creator"/>
-                <label>No</label><br/>
+                <label>لا</label><br/>
             </div>
 
             <div className="choose-radio">
-                <label htmlFor="fname" className="form-label">Do you want a single language or multilingual site?</label><br/>
+                <label htmlFor="fname" className="form-label">هل تريد موقعًا بلغة واحدة أم موقعًا متعدد اللغات؟</label><br/>
                 <br/>
                 <input type="radio" name="choose-site" required/>
-                <label>Single language</label><br/>
+                <label>لغة واحدة</label><br/>
                 <input type="radio" name="choose-site"/>
-                <label>Multilingual</label><br/>
+                <label>متعدد اللغات</label><br/>
             </div>
 
             <div className="choose-check-box">
-                <label htmlFor="fname" className="form-label">What are the pages / sections that you need to include in your website?</label><br/>
+                <label htmlFor="fname" className="form-label">ما هي الصفحات / الأقسام التي تحتاج إلى تضمينها في موقع الويب الخاص بك؟</label><br/>
                 <br/>
                 <input type="checkbox" name="choose-pages-you-want" value="About"/>
                 <label>About</label><br/>
@@ -112,20 +112,20 @@ const WebQuestionnaireAR = () => {
                 <input type="checkbox" name="choose-pages-you-want" value="Blog"/>
                 <label>Blog</label><br/>
                 <input type="checkbox" name="choose-pages-you-want" value="Else"/>
-                <label>Else</label> <input type="text" name="" id=""/> 
+                <label>غير ذلك :</label> <input type="text" name="" id=""/> 
             </div>
 
             <div className="choose-radio">
-                <label htmlFor="fname" className="form-label">Do you want social media icons on your site?</label><br/>
+                <label htmlFor="fname" className="form-label">هل تريد أيقونات وسائل التواصل الاجتماعي على موقعك؟</label><br/>
                 <br/>
                 <input type="radio" name="choose-social-media" required/>
-                <label>Yes</label><br/>
+                <label>نعم</label><br/>
                 <input type="radio" name="choose-social-media"/>
-                <label>No</label><br/>
+                <label>لا</label><br/>
             </div>
 
             <div className="choose-check-box">
-                <label htmlFor="fname" className="form-label">If your answer is yes, which platforms do you use?</label><br/>
+                <label htmlFor="fname" className="form-label">إذا كانت إجابتك نعم ، فما هي المنصات التي تستخدمها؟</label><br/>
                 <br/>
                 <input type="checkbox" name="choose-platforms" value="Twitter"/>
                 <label>Twitter</label><br/>
@@ -140,29 +140,29 @@ const WebQuestionnaireAR = () => {
                 <input type="checkbox" name="choose-platforms" value="Snapchat"/>
                 <label>Snapchat</label><br/>
                 <input type="checkbox" name="choose-platforms" value="Else"/>
-                <label>Else</label> <input type="text" name="" id=""/> 
+                <label>غير ذلك :</label> <input type="text" name="" id=""/> 
             </div>
 
             <div className="choose-radio">
-                <label htmlFor="fname" className="form-label">Are you interested in our Brand Identity Service?</label><br/>
+                <label htmlFor="fname" className="form-label">هل أنت مهتم بخدمة هوية علامتنا التجارية؟</label><br/>
                 <br/>
                 <input type="radio" name="choose-our-brand" required/>
-                <label>Yes</label><br/>
+                <label>نعم</label><br/>
                 <input type="radio" name="choose-our-brand"/>
-                <label>No</label><br/>
+                <label>لا</label><br/>
             </div>  
 
             <div className="additional-information">
-                <label htmlFor="fname" className="form-label">Please write any additional information or requirement</label><br/>
+                <label htmlFor="fname" className="form-label">يرجى كتابة أي معلومات أو متطلبات إضافية</label><br/>
                 <input type="text" id="fname" name="fname" required />
             </div>
 
             <div className="thank-you">
-                <h4>We will study the specifications of your project and will contact you soon to set a business meeting. Thank you.</h4>
+                <h4>سندرس مواصفات مشروعك وسنتصل بك قريبًا لتحديد اجتماع عمل. شكرا لك.</h4>
             </div>
 
             <main>
-                <a href="./form-3.html"><input type="submit"/></a>
+                <a href="./form-3.html"><input type="submit" value="إرسال"/></a>
             </main>
         </div>
     </form>
