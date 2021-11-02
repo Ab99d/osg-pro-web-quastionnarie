@@ -9,6 +9,50 @@
   box-sizing: border-box;
 }
 
+.bg-web {
+  background: url("../images/bg1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.web-nav .container-fluid {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.web-nav nav {
+  min-height: 85px;
+}
+
+@media (min-width: 1200px) {
+  .web-nav .navbar-nav li a {
+      font-size: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .web-nav .navbar-nav li {
+      margin: 0 !important;
+  }
+}
+
+@media (max-width: 444px) {
+  .web-nav .container-fluid a {
+      width: 75%;
+  }
+}
+
+@media (max-width: 350px) {
+  .web-nav .container-fluid a {
+      width: 60%;
+  }
+}
+
+.web-nav .navbar-brand img {
+  max-width: 150px !important;
+} 
+
 .web-en-form input[type=number]::-webkit-inner-spin-button,
 .web-en-form input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -19,11 +63,6 @@
 .web-questionnaire-ar input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   appearance: none;
-}
-
-form.web {
-  background: url("../images/bg.png");
-  background-size: cover;
 }
 
 form.web .container {
@@ -51,6 +90,7 @@ form.web .container .form-title h2 {
   font-family: Cabin;
   margin-bottom: 0.8rem;
   color: #fcb813;
+  font-size: 25px;
 }
 form.web .container .form-title p {
   font-family: Roboto, Arial, sans-serif;
@@ -113,6 +153,7 @@ form.web .container .thank-you h4 {
   color: #8a817c;
   text-align: center;
   line-height: 25px;
+  font-size: 20px;
 }
 form.web .container main {
   width: 100%;
@@ -163,4 +204,36 @@ form.web-questionnaire-ar .container .form-title p {
 
 .web-questionnaire-ar input[type=submit] {
   font-family: Almarai !important;
+}
+
+.web-footer .brand-footer {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.web-footer .brand-footer .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.web-footer .brand-footer .container p {
+  font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.web-footer .brand-footer .container .social-icon i {
+  font-size: 35px;
+  margin-left: 1rem;
+}
+
+@media (max-width: 993px) {
+  .web-footer .brand-footer .container {
+      flex-direction: column;
+      height: 400px;
+  }
+  .web-footer .brand-footer .container div {
+      margin: 1rem;
+  }
 }
