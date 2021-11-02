@@ -1,6 +1,6 @@
 import WebQuestionnaire from './pages/WebQuestionnaire';
 import WebQuestionnaireAR from './pages/WebQuestionnaireAR'
-import { HashRouter as Router, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
 function App() {
   return (
